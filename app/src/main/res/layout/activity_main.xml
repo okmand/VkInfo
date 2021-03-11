@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/common_padding"
+    android:paddingTop="@dimen/common_padding"
+    android:paddingEnd="@dimen/common_padding"
+    tools:context=".activities.MainActivity">
+
+    <EditText
+        android:id="@+id/et_search_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big_margin"
+        android:hint="@string/input_id"
+        android:inputType="text"
+        android:padding="@dimen/small_padding"
+        android:textSize="@dimen/text_size" />
+
+    <Button
+        android:id="@+id/b_search_vk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/search" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading_indicator"
+        android:layout_width="@dimen/progress_bar_size"
+        android:layout_height="@dimen/progress_bar_size"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_gravity="center"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/common_padding"
+            android:text="@string/error_message"
+            android:textSize="@dimen/text_size"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+</LinearLayout>

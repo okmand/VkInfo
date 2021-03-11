@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VKInfo</string>
+    <string name="input_id">Enter the id in Vkontakte</string>
+    <string name="search">Search</string>
+    <string name="result_here">Result here</string>
+
+    <string name="error_message">Ooops</string>
+</resources>
